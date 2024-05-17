@@ -216,7 +216,7 @@ async function bbbOverWSHandler(request) {
 				isDns = true;
 			}
 
-			// ["version", "¸½¼ÓĞÅÏ¢³¤¶È N"]
+			// ["version", "é™„åŠ ä¿¡æ¯é•¿åº¦ N"]
 			const bbbResponseHeader = new Uint8Array([bbbVersion[0], 0]);
 			const rawClientData = chunk.slice(rawDataIndex);
 
@@ -732,19 +732,19 @@ ${bbbSec}
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
-<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='Í¼Æ¬ÃèÊö' style='margin-bottom: -50px;'>
+<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='å›¾ç‰‡æè¿°' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>Welcome! This function generates configuration for bbb protocol. If you found this useful, please check our GitHub project for more:</b>
-<b style='font-size: 15px;'>»¶Ó­£¡ÕâÊÇÉú³É bbb Ğ­ÒéµÄÅäÖÃ¡£Èç¹ûÄú·¢ÏÖÕâ¸öÏîÄ¿ºÜºÃÓÃ£¬Çë²é¿´ÎÒÃÇµÄ GitHub ÏîÄ¿¸øÎÒÒ»¸östar£º</b>
+<b style='font-size: 15px;'>æ¬¢è¿ï¼è¿™æ˜¯ç”Ÿæˆ bbb åè®®çš„é…ç½®ã€‚å¦‚æœæ‚¨å‘ç°è¿™ä¸ªé¡¹ç›®å¾ˆå¥½ç”¨ï¼Œè¯·æŸ¥çœ‹æˆ‘ä»¬çš„ GitHub é¡¹ç›®ç»™æˆ‘ä¸€ä¸ªstarï¼š</b>
 <a href='https://github.com/3Kmfi6HP/EDtunnel' target='_blank'>EDtunnel - https://github.com/3Kmfi6HP/EDtunnel</a>
 <iframe src='https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>bbb ½Úµã¶©ÔÄÁ¬½Ó</a>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows ½Úµã¶©ÔÄÁ¬½Ó</a>
-<a href='${clash_link}' target='_blank'>Clash ½Úµã¶©ÔÄÁ¬½Ó</a>
-<a href='${subbestip}' target='_blank'>ÓÅÑ¡IP×Ô¶¯½Úµã¶©ÔÄ</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>ClashÓÅÑ¡IP×Ô¶¯</a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singboxÓÅÑ¡IP×Ô¶¯</a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekoboxÓÅÑ¡IP×Ô¶¯</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNGÓÅÑ¡IP×Ô¶¯</a></p>`;
+<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>bbb èŠ‚ç‚¹è®¢é˜…è¿æ¥</a>
+<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows èŠ‚ç‚¹è®¢é˜…è¿æ¥</a>
+<a href='${clash_link}' target='_blank'>Clash èŠ‚ç‚¹è®¢é˜…è¿æ¥</a>
+<a href='${subbestip}' target='_blank'>ä¼˜é€‰IPè‡ªåŠ¨èŠ‚ç‚¹è®¢é˜…</a>
+<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clashä¼˜é€‰IPè‡ªåŠ¨</a>
+<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singboxä¼˜é€‰IPè‡ªåŠ¨</a>
+<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekoboxä¼˜é€‰IPè‡ªåŠ¨</a>
+<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNGä¼˜é€‰IPè‡ªåŠ¨</a></p>`;
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
